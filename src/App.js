@@ -35,12 +35,6 @@ class App extends React.Component {
      )
   })
 }
-  renderUsers() {
-    const { articles } = this.state
-    return articles.map( article => (
-    <div key={article.author}><b>Author</b>: {article.author} <b>Title:</b> {article.title} <b>Published Date:</b> {article.publishedAt}</div>
-    ))
-  }
   
   render() {
     return (
